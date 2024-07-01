@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body, html {
+body,
+html {
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -21,7 +22,8 @@ body, html {
 .column1 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribuye espacio entre los elementos */
+    justify-content: space-between;
+    /* Distribuye espacio entre los elementos */
     height: 100%;
     width: 25%;
 }
@@ -69,12 +71,14 @@ body, html {
     margin-bottom: 10px;
 }
 
-.card1 h3, .card2 h3 {
+.card1 h3,
+.card2 h3 {
     font-size: 18px;
     margin: 10px 0 5px;
 }
 
-.card1 p, .card2 p {
+.card1 p,
+.card2 p {
     font-size: 14px;
     color: #888;
 }
@@ -102,15 +106,25 @@ body, html {
     font-size: 14px;
 }
 
+.instagram-images img {
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    margin: 2px;
+}
+
 /*end contenido*/
 
 /*iconos card 3 y 4*/
 .card-icon {
-    width: 50px; /* Ajusta el tamaño según tus necesidades */
-    height: 50px; /* Ajusta el tamaño según tus necesidades */
+    width: 50px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: 50px;
+    /* Ajusta el tamaño según tus necesidades */
     display: block;
     margin: auto;
 }
+
 /*end*/
 .cards1 {
     display: flex;
@@ -159,7 +173,8 @@ body, html {
 .column2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribuye espacio entre los elementos */
+    justify-content: space-between;
+    /* Distribuye espacio entre los elementos */
     height: 100%;
     width: 50%;
 }
@@ -215,7 +230,8 @@ body, html {
 
 .carousel-nav {
     position: absolute;
-    bottom: 10px; /* Cambiar a la parte inferior */
+    bottom: 10px;
+    /* Cambiar a la parte inferior */
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -257,8 +273,10 @@ body, html {
 }
 
 .memoji-slide img {
-    width: 150px; /* Ajusta el tamaño según tus necesidades */
-    height: 150px; /* Ajusta el tamaño según tus necesidades */
+    width: 150px;
+    /* Ajusta el tamaño según tus necesidades */
+    height: 150px;
+    /* Ajusta el tamaño según tus necesidades */
     object-fit: cover;
     margin-bottom: 25px;
 }
@@ -309,7 +327,8 @@ body, html {
 .column3 {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribuye espacio entre los elementos */
+    justify-content: space-between;
+    /* Distribuye espacio entre los elementos */
     height: 100%;
     width: 25%;
 }
@@ -390,21 +409,38 @@ body, html {
         height: auto;
     }
 
-    .column1, .column2, .column3 {
+    .column1,
+    .column2,
+    .column3 {
         width: 100%;
         height: auto;
         display: flex;
         flex-direction: column;
     }
 
-    .cards1, .cards2, .cards3 {
+    .cards1,
+    .cards2,
+    .cards3 {
         flex-direction: column;
         gap: 20px;
         height: auto;
     }
 
-    .card1, .card2, .card5, .card10, .card11, .card14, .card3, .card4, .card6, .card8, .card9, .card12, .card13 {
-        height: 200px; /* Altura fija para tarjetas en la versión responsive */
+    .card1,
+    .card2,
+    .card5,
+    .card10,
+    .card11,
+    .card14,
+    .card3,
+    .card4,
+    .card6,
+    .card8,
+    .card9,
+    .card12,
+    .card13 {
+        height: 200px;
+        /* Altura fija para tarjetas en la versión responsive */
     }
 
     .card7 {
@@ -415,9 +451,11 @@ body, html {
     .column2 {
         order: 1;
     }
+
     .column2 .card7 {
         order: 1;
     }
+
     .column2 .card6 {
         order: 2;
     }
@@ -425,15 +463,19 @@ body, html {
     .column1 {
         order: 2;
     }
+
     .column1 .card1 {
         order: 3;
     }
+
     .column1 .card2 {
         order: 4;
     }
+
     .column1 .cards1 {
         order: 5;
     }
+
     .column1 .card5 {
         order: 6;
     }
@@ -441,9 +483,11 @@ body, html {
     .column2 .cards2 {
         order: 7;
     }
+
     .column2 .card8 {
         order: 8;
     }
+
     .column2 .card9 {
         order: 9;
     }
@@ -451,15 +495,19 @@ body, html {
     .column3 {
         order: 3;
     }
+
     .column3 .card10 {
         order: 10;
     }
+
     .column3 .card11 {
         order: 11;
     }
+
     .column3 .cards3 {
         order: 12;
     }
+
     .column3 .card14 {
         order: 13;
     }

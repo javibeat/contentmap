@@ -128,3 +128,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // Establecer las posiciones iniciales al cargar la página
     updateSlidePositions();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener favicon de javibeat.com
+    const websiteCard = document.getElementById('website-card');
+    const websiteLogo = document.createElement('img');
+    websiteLogo.src = 'https://logo.clearbit.com/javibeat.com';
+    websiteLogo.alt = 'Javi Beat Logo';
+    websiteLogo.className = 'card-logo';
+    websiteCard.insertBefore(websiteLogo, websiteCard.firstChild);
+
+    // Obtener favicon de Instagram
+    const instagramCard = document.getElementById('instagram-card');
+    const instagramLogo = document.createElement('img');
+    instagramLogo.src = 'https://logo.clearbit.com/instagram.com';
+    instagramLogo.alt = 'Instagram Logo';
+    instagramLogo.className = 'card-logo';
+    instagramCard.insertBefore(instagramLogo, instagramCard.firstChild);
+});
