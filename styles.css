@@ -104,6 +104,14 @@ body, html {
 
 /*end contenido*/
 
+/*iconos card 3 y 4*/
+.card-icon {
+    width: 50px; /* Ajusta el tamaño según tus necesidades */
+    height: 50px; /* Ajusta el tamaño según tus necesidades */
+    display: block;
+    margin: auto;
+}
+/*end*/
 .cards1 {
     display: flex;
     width: 100%;
