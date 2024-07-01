@@ -54,6 +54,56 @@ body, html {
     margin: 0 0 20px 0;
 }
 
+/*Contenido cards 1 y 2*/
+/* Estilo para card1 y card2 */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.card1 h3, .card2 h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.card1 p, .card2 p {
+    font-size: 14px;
+    color: #888;
+}
+
+.instagram-images {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.instagram-images img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.follow-button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/*end contenido*/
+
 .cards1 {
     display: flex;
     width: 100%;
