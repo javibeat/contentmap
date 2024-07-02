@@ -145,4 +145,30 @@ document.addEventListener('DOMContentLoaded', function() {
     instagramLogo.alt = 'Instagram Logo';
     instagramLogo.className = 'card-logo';
     instagramCard.insertBefore(instagramLogo, instagramCard.firstChild);
+
+    // Obtener imágenes de Instagram
+    const instagramImagesContainer = document.getElementById('instagram-images');
+    const instagramToken = 'TU_ACCESS_TOKEN'; // Reemplaza con tu token de acceso de Instagram
+    const instagramEndpoint = `https://graph.instagram.com/me/media?fields=id,media_url&access_token=${instagramToken}`;
+
+    fetch(instagramEndpoint)
+        .then(response => response.json())
+        .then(data => {
+            const images = data.data.slice(0, 4); // Obtener las primeras 4 imágenes
+            images.forEach(image => {
+                const imgElement = document.createElement('img');
+                imgElement.src = image.media_url;
+                imgElement.alt = 'Instagram Image';
+                instagramImagesContainer.appendChild(imgElement);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching Instagram images:', error);
+        });
+
+    // Botón de Follow en Instagram
+    const followButton = document.getElementById('follow-button');
+    followButton.addEventListener('click', function() {
+        window.open('https://instagram.com/javibeat', '_blank');
+    });
 });
