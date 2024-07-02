@@ -132,11 +132,14 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function() {
     // Obtener favicon de javibeat.com
     const websiteCard = document.getElementById('website-card');
+    const websiteLink = websiteCard.querySelector('a');
+    const websiteURL = 'https://javibeat.com';
+    const faviconURL = `${websiteURL}/favicon.png`;
     const websiteLogo = document.createElement('img');
-    websiteLogo.src = 'https://logo.clearbit.com/javibeat.com';
+    websiteLogo.src = faviconURL;
     websiteLogo.alt = 'Javi Beat Logo';
     websiteLogo.className = 'card-logo';
-    websiteCard.insertBefore(websiteLogo, websiteCard.firstChild);
+    websiteLink.insertBefore(websiteLogo, websiteLink.firstChild);
 
     // Obtener favicon de Instagram
     const instagramCard = document.getElementById('instagram-card');
@@ -144,5 +147,6 @@ document.addEventListener('DOMContentLoaded', function() {
     instagramLogo.src = 'https://logo.clearbit.com/instagram.com';
     instagramLogo.alt = 'Instagram Logo';
     instagramLogo.className = 'card-logo';
-    instagramCard.insertBefore(instagramLogo, instagramCard.firstChild);
+    const instagramLink = instagramCard.querySelector('a');
+    instagramLink.insertBefore(instagramLogo, instagramLink.firstChild);
 });

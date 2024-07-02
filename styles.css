@@ -70,11 +70,12 @@ html {
 }
 
 .card-logo {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     margin-bottom: 10px;
     border-radius: 50%;
-    object-fit: cover;
+    background-color: white;
+    padding: 10px;
 }
 
 .card1 h3,
@@ -114,23 +115,6 @@ html {
 
 /*end contenido*/
 
-.card3 .card-icon {
-    font-size: 24px;
-    color: white;
-    background-color: #07bb1c;
-    padding: 13px;
-    border-radius: 50%;
-}
-
-.card4 .card-icon {
-    font-size: 24px;
-    color: white;
-    background-color: #3191f2;
-    padding: 13px;
-    border-radius: 50%;
-}
-
-/*end*/
 .cards1 {
     display: flex;
     width: 100%;
@@ -153,6 +137,40 @@ html {
     box-sizing: border-box;
     text-align: center;
 }
+
+.card3 .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #07bb1c;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-size: 25px;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.card4 .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #3191f2;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-size: 25px;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+/*end*/
 
 .card5 {
     display: flex;
@@ -506,6 +524,7 @@ html {
 
     .column3 .card10 {
         order: 10;
+        height: 300px;
     }
 
     .column3 .card11 {
