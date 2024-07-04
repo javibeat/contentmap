@@ -127,26 +127,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Establecer las posiciones iniciales al cargar la página
     updateSlidePositions();
-});
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Obtener favicon de javibeat.com
-    const websiteCard = document.getElementById('website-card');
-    const websiteLink = websiteCard.querySelector('a');
-    const websiteURL = 'https://javibeat.com';
-    const faviconURL = `${websiteURL}/favicon.png`;
-    const websiteLogo = document.createElement('img');
-    websiteLogo.src = faviconURL;
-    websiteLogo.alt = 'Javi Beat Logo';
-    websiteLogo.className = 'card-logo';
-    websiteLink.insertBefore(websiteLogo, websiteLink.firstChild);
+    // Obtener favicons y asignarlos a las cards correspondientes
+    const cards = [
+        { id: 'website-card', url: 'https://javibeat.com' },
+        { id: 'instagram-card', url: 'https://instagram.com' },
+        { id: 'website-card-2', url: 'https://truelovecreative.es' }
+    ];
 
-    // Obtener favicon de Instagram
-    const instagramCard = document.getElementById('instagram-card');
-    const instagramLogo = document.createElement('img');
-    instagramLogo.src = 'https://logo.clearbit.com/instagram.com';
-    instagramLogo.alt = 'Instagram Logo';
-    instagramLogo.className = 'card-logo';
-    const instagramLink = instagramCard.querySelector('a');
-    instagramLink.insertBefore(instagramLogo, instagramLink.firstChild);
+    cards.forEach(card => {
+        const cardElement = document.getElementById(card.id);
+        const linkElement = cardElement.querySelector('a');
+        const faviconUrl = `https://www.google.com/s2/favicons?domain=${new URL(card.url).hostname}`;
+        const logoElement = document.createElement('img');
+        logoElement.src = faviconUrl;
+        logoElement.alt = 'Favicon';
+        logoElement.className = 'card-logo';
+        linkElement.insertBefore(logoElement, linkElement.firstChild);
+    });
 });
